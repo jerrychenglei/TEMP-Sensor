@@ -1,0 +1,101 @@
+{
+  "project": "ESP32-TEMP-SYSTEM",
+  "description": "Firmware version manifest for ESP32 Temperature Capture System",
+  "manifest_version": "1.0",
+  "last_updated": "2025-12-09T06:40:00Z",
+  
+  "latest": {
+    "version": "1.0.1",
+    "hw_version": "1.0.0",
+    "url": "http://192.168.1.100:8000/firmware-v1.0.1.bin",
+    "size": 1122288,
+    "md5": "b52434e8b4cbb054fb1eecad7183a434",
+    "release_date": "2025-12-09",
+    "release_notes": "Bug fixes and performance improvements",
+    "required": false,
+    "changelog": [
+      "Fixed MQTT reconnection issue",
+      "Improved OTA update stability",
+      "Added firmware validation",
+      "Optimized memory usage"
+    ]
+  },
+  
+  "versions": [
+    {
+      "version": "1.0.1",
+      "hw_version": "1.0.0",
+      "url": "http://192.168.1.100:8000/firmware-v1.0.1.bin",
+      "size": 1121881,
+      "md5": "a1b2c3d4e5f6789012345678901234ab",
+      "release_date": "2025-12-09",
+      "required": false,
+      "min_hw_version": "1.0.0",
+      "max_hw_version": "1.9.9",
+      "changelog": [
+        "Fixed MQTT reconnection issue",
+        "Improved OTA update stability",
+        "Added firmware validation"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "hw_version": "1.0.0",
+      "url": "http://192.168.1.100:8000/firmware-v1.0.0.bin",
+      "size": 1098765,
+      "md5": "b2c3d4e5f6789012345678901234bc",
+      "release_date": "2025-12-01",
+      "required": false,
+      "min_hw_version": "1.0.0",
+      "max_hw_version": "1.9.9",
+      "changelog": [
+        "Initial release",
+        "Basic temperature monitoring",
+        "MQTT support",
+        "SD card logging"
+      ]
+    },
+    {
+      "version": "0.9.0",
+      "hw_version": "1.0.0",
+      "url": "http://192.168.1.100:8000/firmware-v0.9.0.bin",
+      "size": 1050000,
+      "md5": "c3d4e5f6789012345678901234cd",
+      "release_date": "2025-11-15",
+      "required": false,
+      "deprecated": true,
+      "deprecation_message": "This version is deprecated. Please upgrade to 1.0.0 or later.",
+      "changelog": [
+        "Beta release",
+        "Testing features"
+      ]
+    }
+  ],
+  
+  "hardware_variants": {
+    "hw_v1.0": {
+      "description": "Original hardware revision",
+      "latest_version": "1.0.1",
+      "compatible_versions": ["1.0.1", "1.0.0", "0.9.0"]
+    },
+    "hw_v1.1": {
+      "description": "Hardware revision 1.1 with improved sensors",
+      "latest_version": "1.0.1",
+      "compatible_versions": ["1.0.1"]
+    }
+  },
+  
+  "update_policy": {
+    "auto_update": false,
+    "check_interval_hours": 24,
+    "allow_downgrade": false,
+    "require_user_confirmation": true
+  },
+  
+  "server_info": {
+    "base_url": "http://192.168.1.100:8000",
+    "backup_url": "http://192.168.1.101:8000",
+    "support_email": "support@example.com",
+    "documentation_url": "https://docs.example.com/firmware"
+  }
+}
