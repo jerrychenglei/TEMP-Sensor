@@ -7,7 +7,7 @@
   "latest": {
     "version": "1.0.1",
     "hw_version": "1.0.0",
-    "url": "http://192.168.1.100:8000/firmware-v1.0.1.bin",
+    "url": "https://raw.githubusercontent.com/jerrychenglei/TEMP-Sensor/refs/heads/main/Firmware/latest/firmware-v1.0.1.bin",
     "size": 1122288,
     "md5": "b52434e8b4cbb054fb1eecad7183a434",
     "release_date": "2025-12-09",
