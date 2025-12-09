@@ -1,5 +1,5 @@
 {
-  "project": "ESP32-TEMP-SYSTEM",
+  "project": "TEMP-4CH-SYSTEM",
   "description": "Firmware version manifest for ESP32 Temperature Capture System",
   "manifest_version": "1.0",
   "last_updated": "2025-12-09T06:40:00Z",
